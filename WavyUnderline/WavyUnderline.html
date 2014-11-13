@@ -4,18 +4,20 @@
  <title>﹏書名號﹏CSS樣式</title>
  <style>
   cite.Chinese {
-    font-style: normal;
-    text-decoration-line: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: red;
-  }
-  cite.Chinese {
-       -moz-text-decoration-line: underline;
-       -moz-text-decoration-style: wavy;
-       -moz-text-decoration-color: red;
-    -webkit-text-decoration-line: underline;
-    -webkit-text-decoration-style: wavy;
-    -webkit-text-decoration-color: red;
+/*取消cite的斜體效果*/
+   font-style: normal;
+/*CSS3標準，待遵守*/
+           text-decoration-line: underline;
+           text-decoration-style: wavy;
+           text-decoration-color: red;
+/*Firefox有效*/
+      -moz-text-decoration-line: underline;
+      -moz-text-decoration-style: wavy;
+      -moz-text-decoration-color: red;
+/*Chrome、Safari無效*/
+   -webkit-text-decoration-line: underline;
+   -webkit-text-decoration-style: wavy;
+   -webkit-text-decoration-color: red;
   } 
  </style>
 </head>
